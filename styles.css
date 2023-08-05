@@ -1,0 +1,529 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    background-image: url(https://store.longphuong.vn/wp-content/uploads/2022/09/tra-sua-tran-chau-duong-den.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+/* ykh */
+.hi{
+    position: fixed;
+    z-index: 2;
+}
+#icon-user{
+    color: white;
+    position: fixed;
+    z-index: 2;
+    top:0;
+    margin-top: 8px;
+    margin-right: 10px;
+    right: 0;
+}
+#logo{
+    height: 80px;
+    position: fixed;
+    z-index: 3;
+    top:0;
+    margin-top: -15px;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center ;
+   
+  }
+  
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .topnav a:hover {
+    background-color: pink;
+    color: black;
+  }
+  
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav {
+        display: block;
+        float: right;
+    }
+    .topnav a{
+        float: right;
+        text-align: center;
+    }
+    .topnav a {display: none;}
+    .topnav a.icon {
+      float: left;
+      display: block;
+    }
+    #logo{
+        margin-left: 45%;
+    }
+  }
+  
+
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: fixed; z-index: 3;}
+    .topnav.responsive .icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+      
+    }
+    .topnav a:first-child{
+        margin-right: 0;
+      }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+  }
+a{
+    text-decoration: none;   
+    
+}
+#choosen{
+    display: flex;
+    
+}
+#choosen li{
+    list-style-type: none;
+    padding: 20px;
+    /* color: rgb(214, 10, 78); */
+    color: black;
+
+    font-size: 20px;
+}
+#choosen li:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    background-color: rgb(96, 201, 201);
+    
+}
+
+#order-icon{
+    color: rgb(16, 17, 16);
+    margin-right: 20px;
+}
+p{
+    font-size: larger;
+    padding-left: 5px;
+}
+main{
+    margin-top: 4rem;
+}
+#introduce{
+    
+    width: 100%;
+    height: 90vh;
+    padding-bottom: 10rem;
+    display: grid;
+    align-items: center;
+    color: white;
+    
+}
+#introduce h1:first-child{
+    margin:5rem 0 -20px;
+    
+}
+#introduce p{
+    max-width: 600px;
+    background-color: #ffffff05;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px);
+   
+}
+#read-more-btn{
+    background-color: rgb(225, 136, 151);
+    color: rgb(242, 223, 223);
+   height: 2.5rem;
+   padding:10px;
+   border: none;
+   border-radius: 3px;
+} 
+#read-more-btn:hover{
+    color: black;
+    border: 1px solid pink;
+}
+.introduce-title{
+    margin-left: 3rem;
+    
+}
+#welcome{
+    background-image: url(https://free.vector6.com/wp-content/uploads/2021/03/freepng1587-hinh-la-cay-cho-ghep-anh-tach-nen-png-3.png);
+    background: linear-gradient(90deg, white, pink);
+    padding-top:5px ;
+}
+#welcome-heading{
+    text-align: center;
+    text-decoration: underline;
+    color:rgb(141, 197, 58);
+    
+}
+.wrapper{
+    position: relative;
+}
+.wrapper, .carousel{
+    white-space: nowrap;
+    cursor: pointer;
+   scroll-behavior: smooth;
+   scroll-snap-type: x mandatory;
+}
+.carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.carousel.dragging img{
+    pointer-events: none;
+}
+.carousel{
+    overflow: hidden;
+}
+.wrapper i{
+    height: 46px;
+    width: 46px;
+    background-color: #fff;
+    line-height: 46px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.2rem;
+    position: absolute;
+    transform: translateY(-50%);
+    top:50%;
+    z-index: 999;
+    border: 1px solid;
+    box-shadow: 1px 2px black;
+}
+.wrapper i:first-child{
+    margin-bottom: -100%;
+    left:-10px;
+    z-index: 1;
+    display: none;
+}
+.wrapper i:last-child{
+    right: -23px;
+    overflow: visible;
+    z-index: 1;
+}
+.carousel img{
+    margin-left: 20px;
+    margin-top: 20px;
+    width:97%;
+    height: 80vh;
+    border-radius: 3px;
+    box-shadow:  2px 1px 2px 3px rgb(67, 66, 66);
+    object-fit: cover;
+    border-radius: 5px ;
+}
+.welcome-image{
+    margin-right: 15px;
+}
+.welcome-image p{
+   text-align: center;
+   margin-top: 5px;
+   
+}
+.welcome-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    gap: 10px;
+}
+
+.welcome-title h2{
+    margin: 100px 0 -10px;
+    color: rgb(108, 66, 66);
+}
+.welcome-title h1:nth-of-type(1){
+    margin: 20px 0 -20px ;
+}
+.welcome-title h1:nth-of-type(2){
+    font-size: 22px;
+    color: rgb(221, 174, 104);
+    font-weight: 100;
+}
+@media screen and (max-width:1100px) {
+    #introduce p{
+        max-width: 500px;
+    }
+}
+@media screen and (max-width:950px) {
+    #introduce p{
+        max-width: 400px;
+    }
+   
+}
+@media screen and (max-width:650px) {
+    #introduce p{
+        max-width: 320px;
+    }
+    .navbar i{
+        font-size: 23px;
+    }
+    .introduce-title{
+        margin-left: 1rem;
+        font-size: smaller;
+    }
+    #choosen li{
+        font-size: 13px;
+    }
+    #icon{
+        font-size: smaller;
+    }
+    #welcome-heading{
+        font-size: 25px;
+    }
+    .welcome-grid{
+        margin-top: 0;
+    }
+    .welcome-title{
+        font-size: smaller;
+    }
+    .welcome-title h2{
+        margin: 100px 0 -10px;
+        color: rgb(108, 66, 66);
+        margin: 22px;
+    }
+    .carousel img{
+        object-fit: cover;
+        height: 40vh;
+    }
+
+}
+/* dinh dang phan items----------------------- */
+.intro-item{
+    width:100%;
+    background-color: #ffffff05;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(25px);
+}
+#items h1,h2{
+    text-align: center;
+}
+#items h1{
+    text-decoration: underline;
+}
+#items{
+    padding-top: 5px;
+    background:linear-gradient(120deg,rgb(37, 37, 196), white,pink) ;
+    overflow: hidden;
+}
+#container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+    margin-left: 5%;
+}
+.info-items{
+    width: 47vh;
+    height: 380px;
+    border: 1px solid;
+    border-radius: 6px;
+    background-color: rgb(46, 155, 155);
+    transition: 0.5s;
+    box-shadow: 2px 3px black;
+}
+.info-items:last-child{
+    height: 390px;
+}
+.info-items img{
+    width: 100%;
+    margin-top: -20px;
+    object-fit: cover;
+    transition: 0.5s;
+   
+}
+
+#name-item{
+    margin-top: -8px;
+    background-color: a;
+    text-decoration: underline;
+}
+#price-item{
+    margin-top: -20px;
+    font-size:25px ;
+   
+}
+#price-item span{
+    font-size: 15px;
+}
+.size{
+    margin-top: -35px;
+    font-size: larger;
+}
+.size input[type="radio"] {
+  transform: scale(1.5);
+  margin-right: 5px; 
+}
+
+.number{
+    display: flex;
+    justify-content: center;
+    margin-top: -15px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+.number input{
+    height: 25px;
+    width: 100px;
+    border-radius: 5px;
+}
+.info-items button{
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: pink;
+    box-shadow: 1px 2px rgb(26, 25, 25);
+}
+
+#price-item, .size, .number, .info-items button{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.1s;
+}
+.info-items:hover{
+    cursor: pointer;
+    transform: translateY(-7px);
+}
+
+#container:hover > :not(:hover){
+    opacity: 0.2;
+}
+.info-items button:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.info-items:hover img{
+    transform: translateY(-30px) rotate(-25deg);
+    transition: 0.5s;
+    filter: drop-shadow(3px 3px 4px pink);
+}
+.info-items.clicked #price-item{
+    visibility: visible;
+    margin-top: -10px;
+}
+.info-items.clicked{
+    height:530px;
+}
+.info-items.clicked:last-child{
+    height:600px
+}
+ 
+.info-items.clicked #price-item,
+.info-items.clicked .size,
+.info-items.clicked .number,
+.info-items.clicked button {
+  visibility: visible;
+  opacity: 1;
+}
+#contact{
+    padding-top: 1px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(37, 39, 42);
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+.profile-title h1{
+    margin-top: 15%;
+    font-size: 45px;
+}
+.profile-title p{
+    margin-top: -30px;
+    margin-bottom: 50px;
+}
+#profile-link :hover{
+    color: orange;
+}
+.profile-link-group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    font-size: 20px;
+
+}    
+.profile-link-group a{
+    margin: 20px;
+    color: #fff;
+}
+.icons:hover{
+    transform: translateY(5px);
+    transition: transform 0.7s ease;
+    
+}
+footer{
+    margin-top: 15rem;
+    border-top: 3px solid rgb(162, 46, 46);
+    padding: 1rem;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(220, 213, 213);
+}
+.bold{
+    font-weight: 900;
+}
+#phone-icon{
+    color: white;
+}
+@media screen and (max-width:800px) {
+    
+    .profile-link-group{
+        font-size: 20px;
+    }
+    footer{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    
+    .profile-title h1{
+        font-size: 30px;
+    }
+    .profile-link-group{
+        gap: 60px;
+        
+    }
+    .profile-link-group a:hover{
+        color: black;
+        
+    }
+   .icons:hover{
+        padding: 5x;
+        color: #333;
+        background-color: pink;
+        
+   }
+}
+

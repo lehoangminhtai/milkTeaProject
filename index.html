@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="hi">
+        <a href=""><img src="image/logo.png" id="logo" alt=""></a>
+        <div class="topnav" id="myTopnav">
+       
+            <a href="#introduce" class="active">Home</a>
+            <a href="#welcome">View</a>
+            <a href="#items">Items</a>
+            <a href="#contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+      </div>
+      <a href=""><i class='bx bxs-user fa-2x' id="icon-user"></i></a>
+    </div>
+    
+    <main>
+        <div id="introduce">
+            <div class="introduce-title">
+                <h1>All In Good Taste </h1>
+                <h1>Drink With Grocery</h1>
+                <p>“Food is the fuel that keeps your body running,
+                    and eating a balanced diet with plenty of fruits and vegetables is essential for maintaining good health.” </p>
+                <button id="read-more-btn">Read More</button>
+            </div>
+        </div>
+        <div id="welcome">
+            <h1 id="welcome-heading">Welcome To Grocery</h1>
+            <div class="welcome-grid">
+                <div class="welcome-image">
+                    <div class="wrapper">
+                        <i id="left" class='bx bx-left-arrow-alt'></i>
+                        <div class="carousel">
+                            <img src="https://www.mykioskey.com/wp-content/uploads/2022/06/3.jpg" alt="milk-tea-store-image"  draggable="false">
+                            <img src="https://www.mykioskey.com/wp-content/uploads/2022/06/01.jpg" alt="milk-tea-store-image" draggable="false">
+                            <img src="https://www.mykioskey.com/wp-content/uploads/2022/06/05.jpg" alt="milk-tea-store-image" draggable="false">
+                            <img src="https://www.mykioskey.com/wp-content/uploads/2022/06/04.jpg" alt="milk-tea-store-image" draggable="false">
+                            <img src="https://www.mykioskey.com/wp-content/uploads/2022/06/03.jpg" alt="milk-tea-store-image" draggable="false">
+                        </div>
+                        <i id="right" class='bx bx-right-arrow-alt'></i>
+                    </div>
+                    
+                    <p><i>Some corners of the store</i></p>
+                </div>
+                <div class="welcome-title">
+                    <h2><i>Welcome</i></h2>
+                    <h1>All In Good Taste</h1>
+                    <h1>Drink With Grocery</h1>
+                    <p><i>“My store has every drinks you need. Let's be chill!”</i> </p>
+                    
+                </div>
+            </div>
+        </div>
+        <section id="items">
+            <div class="intro-item">
+                <h1><i>Explore</i></h1>
+                <h2>Our Items</h2>
+            </div>
+            <div id="container">
+                <div class="info-items">
+                    <img src="image/mint-milktea.png" alt="image-milk-tea" >
+                    <h3 id="name-item">Mint Choco Milk Tea</h3>
+                    <h5 id="price-item"><span>Price: </span>$2</h5>
+                    <div class="size">
+                        <span>Choose Size:</span>
+                        <input type="radio" name="choose-size1">S
+                        <input type="radio" name="choose-size1">M
+                        <input type="radio" name="choose-size1">L
+                    </div>
+                    <div class="number">
+                        <p>Number:  <input type="number" min="1" max="30"></p>
+                       
+                    </div>
+                    <button>Buy</button>
+                    
+                </div>
+                <div class="info-items">
+                    <img src="image/Strawberry-milk-tea.png" alt="image-milk-tea">
+                    <h3 id="name-item">Strawberry Milk Tea</h3>
+                    <h5 id="price-item"><span>Price: </span>$2.5</h5>
+                    <div class="size">
+                        <span>Choose Size:</span>
+                        <input type="radio" name="choose-size2"><span class="bold">S</span>
+                        <input type="radio" name="choose-size2"><span class="bold">M</span>
+                        <input type="radio" name="choose-size2"><span class="bold">L</span>
+                    </div>
+                    <div class="number">
+                        <p>Number: <input type="number" min="1" max="30"></p>
+                        
+                    </div>
+                    <button>Buy</button>
+                </div>
+                <div class="info-items">
+                    <img src="image/Okinawa-Coffee-Milk-Tea.png" alt="image-milk-tea">
+                    <h3 id="name-item">Okinawa Coffee Milk Tea </h3>
+                    <h5 id="price-item"><span>Price: </span>$3</h5>
+                    <div class="size">
+                        <span>Choose Size:</span>
+                        <input type="radio" name="choose-size3">S
+                        <input type="radio" name="choose-size3">M
+                        <input type="radio" name="choose-size3">L
+                    </div>
+                    <div class="number">
+                        <p>Number: <input type="number" min="1" max="30"></p>
+                        
+                    </div>
+                    <button>Buy</button>
+                   
+                </div>
+                <div class="info-items">
+                    <img src="image/Strawberry-Chocolate-Milk-Tea.png" alt="image-milk-tea">
+                    <h3 id="name-item">Strawberry Choco Milk Tea </h3>
+                    <h5 id="price-item"><span>Price: </span>$3</h5>
+                    <div class="size">
+                        <span>Choose Size:</span>
+                        <input type="radio" name="choose-size4">S
+                        <input type="radio" name="choose-size4">M
+                        <input type="radio" name="choose-size4">L
+                    </div>
+                    <div class="number">
+                        <p>Number: <input type="number" min="1" max="30"></p>
+                        
+                    </div>
+                    <button>Buy</button>
+                   
+                </div>
+                <div class="info-items">
+                    <img src="image/CREAM-BRULEE.png" alt="image-milk-tea">
+                    <h3 id="name-item">Crème Brulee Milk Tea</h3>
+                    <h5 id="price-item"><span>Price: </span>$2.5</h5>
+                    <div class="size">
+                        <span>Choose Size:</span>
+                        <input type="radio" name="choose-size5">S
+                        <input type="radio" name="choose-size5">M
+                        <input type="radio" name="choose-size5">L
+                    </div>
+                    <div class="number">
+                        <p>Number: <input type="number" min="1" max="30"></p>
+                        
+                    </div>
+                    <button>Buy</button>
+                  
+                </div>
+                <div class="info-items">
+                    <img src="image/strawbery-green.png" alt="image-milk-tea">
+                    <h3 id="name-item">Strawberry Green Milk Tea</h3>
+                    <h5 id="price-item"><span>Price: </span>$1.62</h5>
+                    <div class="size">
+                        <span>Choose Size:</span>
+                        <input type="radio" name="choose-size6">S
+                        <input type="radio" name="choose-size6">M
+                        <input type="radio" name="choose-size6">L
+                    </div>
+                    <div class="number">
+                        <p>Number: <input type="number" min="1" max="30"></p>
+                        
+                    </div>
+                    <button>Buy</button>
+                    
+                </div>
+                <div class="info-items">
+                    <img src="image/chocolate-milk-tea.png" alt="image-milk-tea">
+                    <h3 id="name-item"><span>Price: </span>Chocolate Milk Tea </h3>
+                    <h5 id="price-item">$2.5</h5>
+                    <div class="size">
+                        <span>Choose Size:</span>
+                        <input type="radio" name="choose-size7">S
+                        <input type="radio" name="choose-size7">M
+                        <input type="radio" name="choose-size7">L
+                    </div>
+                    <div class="number">
+                        <p>Number: <input type="number" min="1" max="30"></p>
+                    </div>
+                    <button>Buy</button>
+                   
+                </div>
+                <div class="info-items">
+                    <img src="image/Matcha-Strawberry-Milk-Tea.png" alt="image-milk-tea">
+                    <h3 id="name-item">Matcha Strawberry Milk Tea</h3>
+                    <h5 id="price-item"><span>Price:</span> $2</h5>
+                    <div class="size">
+                        <span>Choose Size:</span>
+                        <input type="radio" name="choose-size8">S
+                        <input type="radio" name="choose-size8">M
+                        <input type="radio" name="choose-size8">L
+                    </div>
+                    <div class="number">
+                        <p>Number: <input type="number" min="1" max="30"></p>
+                    </div>
+                    <button>Buy</button>
+                    
+                </div>
+                <div class="info-items">
+                    <img src="image/pearl-fresh-milk-tea.png" alt="image-milk-tea" >
+                    <h3 id="name-item">Pearl Fresh Milk Tea </h3>
+                    <h5 id="price-item"><span>Price: </span>
+                        $3</h5>
+                    <div class="size">
+                        <span>Choose Size:</span>
+                        <input type="radio" name="choose-size9">S
+                        <input type="radio" name="choose-size9">M
+                        <input type="radio" name="choose-size9">L
+                    </div>
+                    <div class="number">
+                        <p>Number: <input type="number" min="1" max="30"></p>
+                        
+                    </div>
+                    <button>Buy</button>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="profile-title">
+                <h1>Contact With Us</h1>
+                <p><i>...</i></p>
+            </div>
+        <div class="profile-link-group">
+            <div class="icons"><a href="https://www.facebook.com/profile.php?id=100087214533557" target="_blank" id="profile-link"><i class="fab fa-facebook "></i> Facebook</a></div>
+           
+            <div class="icons"><a href="https://www.tiktok.com/@bichtram11425" target="_blank" id="profile-link"><i class='bx bxl-tiktok' ></i> Tiktok</a></div>
+            <div class="icons"><a href="21102003tai@gmail.com" target="_blank" id="profile-link"><span class="bold">@</span> Send a mail</a></div>
+            <div class="icons"><a href="tel:555-555-5555" target="_blank" id="profile-link"><i class="fas fa-mobile phone-icon" id="phone-icon"></i> Call me</a></div>
+        </div>
+        <footer>
+            <p><i>@Copyright By MinhTai</i></p>
+        </footer>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
