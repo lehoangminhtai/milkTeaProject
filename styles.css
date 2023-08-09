@@ -18,6 +18,7 @@ body{
     position: fixed;
     z-index: 2;
 }
+
 #icon-user{
     color: white;
     position: fixed;
@@ -26,6 +27,8 @@ body{
     margin-top: 8px;
     margin-right: 10px;
     right: 0;
+    border: 2px solid ;
+    border-radius: 50%;
 }
 #logo{
     height: 80px;
@@ -526,6 +529,7 @@ footer{
         
    }
 }
+
 .btn {
     color: white;
     font-size: 16px;
@@ -565,3 +569,6 @@ footer{
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+ 
