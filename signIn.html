@@ -7,44 +7,72 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
     <title>Sign Up</title>
+    <!-- Đường link CSS của Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- Đường link JavaScript của Bootstrap (bao gồm jQuery và Popper.js) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
 <body>
     <div class="container">
         <img src="image/logo.png" alt="logo milk-tea shop" width="30%px">
-        <div>
-        <h1>Sign Up</h1>
-        <div class="container-name">
-            <div class="input-box">
-                <input class="css-input" type="text" placeholder="First Name">
-                <i class="bx bx-user"></i>
+        <div class="container1">
+                <div class="title-container">
+                    <h1>Sign Up</h1>
+                    <h1><i class='bx bxs-registered bx-tada' ></i></h1>
+                </div>
+            <div class="container-name">
+                <div class="input-box">
+                    <input class="css-input" type="text" placeholder="First Name">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-box">
+                    <input class="css-input" type="text" placeholder="Last Name">
+                    <i class="bx bx-user"></i>
+                </div>
             </div>
             <div class="input-box">
-                <input class="css-input" type="text" placeholder="Last Name">
-                <i class="bx bx-user"></i>
+                <input class="css-input" type="tel" placeholder="Your number">
+                <i class="bx bx-phone"></i>
             </div>
+            <div class="input-box">
+                <input class="css-input" type="password" placeholder="Your New Password">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input class="css-input" type="password" placeholder="Confirm Password">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box1">
+                <input type="checkbox" style="width: 10px;"> 
+                <span class="" style="font-size: 9.7px;">&nbsp;By registering, you agree to the <a class="deco-a" href="">terms of service</a> and <a class="deco-a" href="">privacy policy</a></span>
+            </div>
+            <div class="input-box">
+                <button class="btn-submit" type="submit"> Register</button>
+            </div>
+            <div class="or">
+                <p>or</p>
+                <hr>
+            </div>
+            <div class="login-method">
+                <button class="btn-login">
+                    <i class="bx bxl-facebook-circle mr-1" style=" font-size: 25px;"></i>
+                    <span >Facebook</span>
+                  </button>
+                <button class="btn-login">
+                    <i class='bx bxl-google mr-1' style="font-size: 25px;"></i>
+                    <span >Google</span>
+                  </button>
+                 
+            </div>
+            <div class="input-box">
+                <p class="span-login"><i>Already have an account? </i><a class="css-login" href="login.html">Log In</a></p>
+            </div>
+            
         </div>
-        <div class="input-box">
-            <input class="css-input" type="tel" placeholder="Your number">
-            <i class="bx bx-phone"></i>
-        </div>
-        <div class="input-box">
-            <input class="css-input" type="password" placeholder="Your New Password">
-            <i class="bx bx-lock-alt"></i>
-        </div>
-        <div class="input-box">
-            <input class="css-input" type="password" placeholder="Confirm Password">
-            <i class="bx bx-lock-alt"></i>
-        </div>
-        <div class="input-box">
-            <p class="span-login"><i>Already have an account? </i><a href="login.html">Log In</a></p>
-        </div>
-        <div class="input-box">
-            <button class="btn-submit" type="submit"> Get Code</button>
-        </div>
-    
-    
-        
-    </div>
     </div>
 </body>
 </html>
